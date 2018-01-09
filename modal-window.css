@@ -7,7 +7,6 @@
 	position:fixed;
 	top:0;
 	left:0;
-	display:none;
 	margin:0;
 	padding:0;
 }
@@ -23,7 +22,6 @@
 	position:fixed;
 	top:25%;
 	left:25%;
-	display:none;
 }
 #modal h1 {
 	text-align:center;
@@ -46,4 +44,8 @@
 	width:1px;
 	height:1px;
 	top:auto;
+}
+
+[hidden] {
+	display:none;
 }

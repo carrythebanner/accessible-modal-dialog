@@ -23,7 +23,6 @@
 	position:fixed;
 	top:25%;
 	left:25%;
-	display:none;
 }
 #modal h1 {
 	text-align:center;
@@ -46,4 +45,8 @@
 	width:1px;
 	height:1px;
 	top:auto;
+}
+
+[hidden] {
+	display:none;
 }

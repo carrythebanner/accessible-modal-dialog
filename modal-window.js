@@ -155,7 +155,7 @@ function setFocusToFirstItemInModal(obj){
 
 function showModal(obj) {
     jQuery('#mainPage').attr('aria-hidden', 'true'); // mark the main page as hidden
-    jQuery('#modalOverlay').css('display', 'block'); // insert an overlay to prevent clicking and make a visual change to indicate the main apge is not available
+    jQuery('#modalOverlay').prop('hidden', false); // insert an overlay to prevent clicking and make a visual change to indicate the main apge is not available
     jQuery('#modal').prop('hidden', false); // make the modal window visible
 
     // attach a listener to redirect the tab to the modal window if the user somehow gets out of the modal window
@@ -170,7 +170,7 @@ function showModal(obj) {
 }
 
 function hideModal() {
-    jQuery('#modalOverlay').css('display', 'none'); // remove the overlay in order to make the main screen available again
+    jQuery('#modalOverlay').prop('hidden', true);; // remove the overlay in order to make the main screen available again
     jQuery('#modal').prop('hidden', true); // hide the modal window
     jQuery('#mainPage').attr('aria-hidden', 'false'); // mark the main page as visible
 
